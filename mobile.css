@@ -1,0 +1,120 @@
+@import url("./style.css");
+/* 
+=====================
+header
+=====================
+ */
+#main-nav{
+    min-height: 55px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+#main-nav > :nth-child(1) img{
+    width: 80px;
+}
+#main-nav > :nth-child(2){
+    width: 100%;
+    padding: 0px 10px;
+    justify-content: space-between;
+}
+#main-nav > :nth-child(2) ul li{
+    margin: 5px;
+    align-items: center;
+    display: flex;
+}
+#main-nav > :nth-child(2) a{
+    font-size: 0.4em;
+    padding: 0px;
+}
+/*  */
+.contant{
+    height: 320px;
+    padding: 0px 14px;
+}
+.contant > :nth-child(1){
+    width: 60%;
+    height: 30px;
+    align-self: center;
+}
+.contant > :nth-child(1) > :nth-child(1) input{
+    width: 100%;
+}
+.contant > :nth-child(1) > :nth-child(2) a i{
+    font-size: 0.9em;
+    margin:0px 11px 0px 2px;
+}
+.contant > :nth-child(2) ul{
+    width: 185px;
+}
+.contant > :nth-child(2) ul li{
+    line-height: 8px;
+}
+.contant > :nth-child(2) ul li h1{
+    font-size: 1em;
+}
+.contant > :nth-child(2) ul li h3{
+    font-size: 1em;
+    line-height: 20px;
+}
+.contant > :nth-child(2) ul li a{
+    line-height: 33px;
+}
+.contant > :nth-child(2) ul li a i{
+    font-size: 3em;
+}
+#main-nav > :nth-child(2) > :nth-child(2) ul > :nth-child(1) a{
+    margin-left: 11px;
+}
+/* 
+===================
+Contact
+===================
+ */
+ #main-contact{
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     text-align: center;
+ }
+ #main-contact > :nth-child(1){
+     width: 80%;
+ }
+ #main-contact > :nth-child(2){
+    width: auto;
+    align-items: center;
+    margin-top: 40px;
+ }
+ #main-contact > :nth-child(1) a{
+     width: 64%;
+     align-self: center;
+ }
+ /* 
+ ==================
+ Footer
+ ==================
+  */
+  footer{
+      padding: 0px 10px;
+      min-height: 150px;
+      align-items: center;
+      display: flex;
+  }
+  #main-footer{
+      height: 118px;
+      justify-content: center;
+  }
+  #main-footer > :nth-child(1) ul{
+      flex-wrap: wrap;
+  }
+  #main-footer > :nth-child(1) ul li{
+      margin-right: 15px;
+  }
+  #main-footer > :nth-child(1) ul li a h5{
+      font-size: 0.7em;
+      line-height: 23px;
+  }
+  #main-footer h5{
+      font-size: 0.6em;
+  }
