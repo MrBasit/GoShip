@@ -1,15 +1,15 @@
 @import url("./style.css");
-#main-nav{
-    width: 735px;
+
+/*
+===========================================
+CONTAcT SECTION
+===========================================
+*/
+#main-contact {
+    justify-content: center;
 }
-#main-nav > :nth-child(2) ul li{
-    margin-left: 20px;
-}
-#main-nav > :nth-child(2){
-    width: 578px;
-}
-.container{
-    max-width: 735px;
+#main-contact > :nth-child(2) {
+    align-items: center;
 }
   /* 
   ==================

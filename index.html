@@ -5,6 +5,7 @@
 	<title>GoShip | Technomide Portfolio</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="./css/font-awesome icons.css">
 	<link rel="stylesheet" type="text/css" media="(min-width:769px)" href="style.css">
 	<link rel="stylesheet" media="(max-width:768px)"  href="./tablet.css">
 	<link rel="stylesheet" media="(max-width:501px)"  href="./mobile.css">
@@ -18,26 +19,41 @@
 		<div class="gradient">
 			<div class="nav-gradient">
 				<div id="main-nav">
-						<div><img src="5WsUTVpp.png"></div>
-						<div>
-							<div>
-								<ul>
-									<li><a class="text-color-white letter-spacing" href="#">HOME</a></li>
-									<li><a class="text-color-white letter-spacing" href="#">HOW IT WORK</a></li>
-									<li><a class="text-color-white letter-spacing" href="#">DEALS</a></li>
-									<li><a class="text-color-white letter-spacing" href="#">CALCULATOR</a></li>
-								</ul>
-							</div>
-							<div>
-								<ul>
-									<li><a class="text-color-white letter-spacing" href="#">SING UP</a></li>
-									<li><a class="text-color-white letter-spacing" href="#">LOG IN</a></li>
-								</ul>
-							</div>
-						</div>
+					<div><img src="5WsUTVpp.png"></div>
+					<!--  -->
+					<div class="navbar">
+						<a class="hamburger__menu">
+							<div class="line line_1"></div>
+							<div class="line line_2"></div>
+							<div class="line line_3"></div>
+						</a>
+						<ul class="nav__list">
+							<li class="nav__item">
+								<a href="#" class="nav__link">Home</a>
+							</li>
+							<li class="nav__item">
+								<a href="#" class="nav__link">How it Work</a>
+							</li>
+							<li class="nav__item">
+								<a href="#" class="nav__link">Deals</a>
+							</li>
+							<li class="nav__item border-right-list__item">
+								<a href="#" class="nav__link">Calculator</a>
+							</li>
+							<li class="nav__item ">
+								<a href="#" class="nav__link">Signup</a>
+							</li>
+							<li class="nav__item">
+								<a href="#" class="nav__link">Login</a>
+							</li>
+						</ul>
 					</div>
+
+					<!--  -->
+
 				</div>
-			<div class="container" >
+			</div>
+				<div class="container" >
 					<div class="contant">
 						<div class="border-radius">
 							<div>
@@ -58,7 +74,7 @@
 								</li>
 							</ul>
 							<div id="Dots">
-								<div class="dot" onclick="CurrentSlide(1)"></div>
+								<div class="dot active" onclick="CurrentSlide(1)"></div>
 								<div class="dot" onclick="CurrentSlide(2)"></div>
 								<div class="dot" onclick="CurrentSlide(3)"></div>
 								<div class="dot" onclick="CurrentSlide(4)"></div>
@@ -119,7 +135,6 @@
 			</div>
 		</div>
 	</footer>
-	<script src="https://kit.fontawesome.com/b6fdcdf49e.js" crossorigin="anonymous"></script>
 	<script src="./main.js"></script>
 </body>
 </html>
