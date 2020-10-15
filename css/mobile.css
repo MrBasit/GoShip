@@ -4,16 +4,21 @@
 header
 =====================
  */
+.nav-gradient{
+	min-height: 50px;
+}
 #main-nav{
-    min-height: 55px;
+    min-height: 50px;
 }
 #main-nav > :nth-child(1) img{
-    width: 80px;
+    width: 60px;
 }
-
-/*  */
+.hamburger__menu {
+    width: 28px;
+    top: 10px;
+}
 .contant{
-    height: 320px;
+    height: 380px;
     padding: 0px 14px;
 }
 .contant > :nth-child(1){

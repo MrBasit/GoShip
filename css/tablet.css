@@ -5,9 +5,6 @@
 CONTAcT SECTION
 ===========================================
 */
-#main-contact {
-    justify-content: center;
-}
 #main-contact > :nth-child(2) {
     align-items: center;
 }

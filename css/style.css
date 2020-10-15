@@ -235,7 +235,7 @@ header{
 
 .contant{
 	width: min(685, 80%);
-	height: 500px;
+	height: 540px;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-around;
@@ -265,6 +265,7 @@ header{
 	align-self: center;
 	align-items: center;
 	justify-content: center;
+	overflow-x: hidden;
 }
 .contant > :nth-child(1) > :nth-child(1) input{
 	width: 374px;
@@ -323,7 +324,7 @@ CONTAcT SECTION
 	height: 600px;
 	width: 100%;
 	display: flex;
-	justify-content: flex-end;
+	justify-content: center;
 	flex-wrap: wrap;
 }
 #main-contact > :nth-child(1){
