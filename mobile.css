@@ -1,8 +1,4 @@
 @import url("./style.css");
-
-.freelance a.button{
-    display: none;
-}
 /* 
 =====================
 header
@@ -19,7 +15,7 @@ header
 }
 .hamburger__menu {
     width: 28px;
-    top: 72px;
+    top: 10px;
 }
 .contant{
     height: 380px;

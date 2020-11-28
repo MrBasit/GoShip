@@ -1,54 +1,28 @@
 <!DOCTYPE html>
 <html>
+
 <head>
 	<meta charset="utf-8">
-	<title>GoShip | Logicade Portfolio</title>
+	<title>GoShip | Technomide Portfolio</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="./css/font-awesome icons.css">
-	<link rel="stylesheet" type="text/css" media="(min-width:769px)" href="./css/style.css">
-	<link rel="stylesheet" media="(max-width:768px)"  href="./css/tablet.css">
-	<link rel="stylesheet" media="(max-width:501px)"  href="./css/mobile.css">
+	<link rel="stylesheet" type="text/css" media="(min-width:769px)" href="style.css">
+	<link rel="stylesheet" media="(max-width:768px)" href="./tablet.css">
+	<link rel="stylesheet" media="(max-width:501px)" href="./mobile.css">
+	<script type="text/javascript" src="./jquery-3.5.1.min.js"></script>
 
 </head>
-<body>
-<!-- HEADER -->
 
-<div class="freelancing">
-	<div class="freelance-container">
-		<div  id="github" class="freelance">
-			<a href="https://github.com/mrbasit" class="img" target="_blank">
-				<img class="imgleave" src="img/new.png">
-				<img class="imghover" src="img/newwhite.png">
-			</a>
-			<p> Github</p>
-			<a href="https://github.com/mrbasit" target="_blank" class="button"> Visit github</a>
-		</div>
-		<div id="upwork" class="freelance">
-			<a href="https://www.upwork.com/freelancers/~015224734dafe31cf8" class="img" target="_blank">
-				<img class="imgleave" src="img/upwork.png">
-				<img class="imghover" src="img/upwork.png">
-			</a>
-			<p> Upwork</p>
-			<a href="https://www.upwork.com/freelancers/~015224734dafe31cf8" class="button" target="_blank"> Start contract</a>
-		</div>
-		<div id="fiverr" class="freelance">
-			<a href="https://www.fiverr.com/techsol_030" class="img" target="_blank">
-				<img class="imgleave" src="img/fiver1.png">
-				<img class="imghover" src="img/fiver.png">
-			</a>
-			<p> Fiverr</p>
-			<a href="https://www.fiverr.com/techsol_030" class="button" target="_blank">Order now</a>
-		</div>
-	</div>
-</div>
-<!-- HEADER -->
+<body data-spy="scroll" data-target="#headerNav" data-offset="250">
+
+	<!-- HEADER -->
 
 	<header id="Slider">
 		<div class="gradient">
 			<div class="nav-gradient">
 				<div id="main-nav">
-					<div><img src="./img/5WsUTVpp.png"></div>
+					<div><img src="5WsUTVpp.png"></div>
 					<!--  -->
 					<div class="navbar">
 						<a class="hamburger__menu">
@@ -56,18 +30,18 @@
 							<div class="line line_2"></div>
 							<div class="line line_3"></div>
 						</a>
-						<ul class="nav__list">
+						<ul class="nav__list" id="headerNav">
 							<li class="nav__item">
-								<a href="#" class="nav__link">Home</a>
+								<a href="#sec1" class="nav__link">Home</a>
 							</li>
 							<li class="nav__item">
-								<a href="#" class="nav__link">How it Work</a>
+								<a href="#sec2" class="nav__link">How it Work</a>
 							</li>
 							<li class="nav__item">
-								<a href="#" class="nav__link">Deals</a>
+								<a href="#sec3" class="nav__link">Contact</a>
 							</li>
 							<li class="nav__item border-right-list__item">
-								<a href="#" class="nav__link">Calculator</a>
+								<a href="#" class="nav__link">About</a>
 							</li>
 							<li class="nav__item ">
 								<a href="#" class="nav__link">Signup</a>
@@ -82,88 +56,117 @@
 
 				</div>
 			</div>
-				<div class="container" >
-					<div class="contant">
-						<div class="border-radius">
-							<div>
-								<input type="search" name="search">
-							</div> 
-							<div>
-								<a class="text-color-black" href="#"><i class="fas fa-search"></i></a>
-							</div>
+			<div id="sec1" class="container">
+				<div class="contant">
+					<div class="border-radius">
+						<div>
+							<input type="search" name="search">
 						</div>
 						<div>
-							<ul>
-								<li>
-									<a class="text-color-white font-size2 font-weight line-height" href="#"><h1>WATCH</h1></a>
-									<a class="text-color-white" href="#"><h3 class="font-weight">HOW IT WORKS</h3></a>
-								</li>
-								<li>
-									<a class="text-color-white" href="#"><i class="fas fa-4x fa-play-circle"></i></a>
-								</li>
-							</ul>
-							<div id="Dots">
-								<div class="dot active" onclick="CurrentSlide(1)"></div>
-								<div class="dot" onclick="CurrentSlide(2)"></div>
-								<div class="dot" onclick="CurrentSlide(3)"></div>
-								<div class="dot" onclick="CurrentSlide(4)"></div>
-							</div>
+							<a class="text-color-black" href="#"><i class="fas fa-search"></i></a>
+						</div>
+					</div>
+					<div>
+						<ul>
+							<li>
+								<a class="text-color-white font-size2 font-weight line-height" href="#">
+									<h1>WATCH</h1>
+								</a>
+								<a class="text-color-white" href="#">
+									<h3 class="font-weight">HOW IT WORKS</h3>
+								</a>
+							</li>
+							<li>
+								<a class="text-color-white" href="#"><i class="fas fa-4x fa-play-circle"></i></a>
+							</li>
+						</ul>
+						<div id="Dots">
+							<div class="dot active" onclick="CurrentSlide(1)"></div>
+							<div class="dot" onclick="CurrentSlide(2)"></div>
+							<div class="dot" onclick="CurrentSlide(3)"></div>
+							<div class="dot" onclick="CurrentSlide(4)"></div>
 						</div>
 					</div>
 				</div>
 			</div>
 		</div>
+		</div>
 	</header>
 
-<!-- CONTACT -->
-	<div class="gradient-contact-main">
+	<!-- CONTACT -->
+	<div id="sec2" class="gradient-contact-main">
 		<section id="Contact">
 			<div class="gradient-contact">
 				<div class="container">
 					<div id="main-contact">
-							<div>
-								<h1 class="margin-bottom3 text-color-white">LOG IN</h1>
-								<input type="email" name="" placeholder="EMAIL">
-								<input class="margin-top30"  type="password" name="" placeholder="PASSWORD">
-								<a class="margin-top6 border-radius text-color-white"  href="#">LOG IN</a>
-								<a class="margin-top20 border-radius text-color-white"  href="#">SIGN UP</a>
-							</div>
-							<div>
-								<a class="text-color-white" href="#"><i class="fas fa-2x fa-user-plus"></i></a>
-							</div>
+						<div>
+							<h1 class="margin-bottom3 text-color-white">LOG IN</h1>
+							<input type="email" name="" placeholder="EMAIL">
+							<input class="margin-top30" type="password" name="" placeholder="PASSWORD">
+							<a class="margin-top6 border-radius text-color-white" href="#">LOG IN</a>
+							<a class="margin-top20 border-radius text-color-white" href="#">SIGN UP</a>
+						</div>
+						<div>
+							<a class="text-color-white" href="#"><i class="fas fa-2x fa-user-plus"></i></a>
+						</div>
 					</div>
 				</div>
 			</div>
 		</section>
-	 </div>
+	</div>
 
-<!-- FOOTER  -->
+	<!-- FOOTER  -->
 
-	<footer>
+	<footer id="sec3">
 		<div class="container">
 			<div id="main-footer">
 				<div>
 					<ul>
 						<li class="letter-spacing">
-							<a  class="text-color-white font-weight" href="#"><h5>PRIVACY AND COOKIES</h5></a>
+							<a class="text-color-white font-weight" href="#">
+								<h5>PRIVACY AND COOKIES</h5>
+							</a>
 						</li>
 						<li class="letter-spacing">
-							<a  class="text-color-white font-weight"  href="#"><h5>LEGAL ADVERTISE</h5></a>
+							<a class="text-color-white font-weight" href="#">
+								<h5>LEGAL ADVERTISE</h5>
+							</a>
 						</li>
 						<li class="letter-spacing">
-							<a  class="text-color-white font-weight"  href="#"><h5>HELP</h5></a>
+							<a class="text-color-white font-weight" href="#">
+								<h5>HELP</h5>
+							</a>
 						</li>
 						<li class="letter-spacing">
-							<a  class="text-color-white font-weight"  href="#"><h5>FEEDBACK</h5></a>
+							<a class="text-color-white font-weight" href="#">
+								<h5>FEEDBACK</h5>
+							</a>
 						</li>
 					</ul>
 				</div>
-				<div class="text-color-white font-weight letter-spacing" >
-					<p>2020 GoShip All rights reserved. | Logicade</p>
+				<div class="text-color-white font-weight letter-spacing">
+					<p>2019 GoShip All rights reserved. | Technomide</p>
 				</div>
 			</div>
 		</div>
 	</footer>
-	<script src="./js/main.js"></script>
+	<script src="./main.js"></script>
+	<script>
+		// Add Scroll Effect On Header Links
+		$('#headerNav a').on('click', function (e) {
+			if (this.hash !== '') {
+				e.preventDefault();
+
+				const hash = this.hash;
+
+				$('html, body').animate({
+					scrollTop: $(hash).offset().top
+				}, 900, function () {
+					window.location.hash = hash;
+				});
+			}
+		});
+	</script>
 </body>
+
 </html>
