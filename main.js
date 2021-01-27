@@ -19,16 +19,16 @@ function changeSlides(){
   
   const Sliderr = document.querySelector('#Slider');
   if(index==1) {
-      Sliderr.style.backgroundImage = "URL('imageimg1.jpg')";
+      Sliderr.style.backgroundImage = "url('./img/imageimg1.jpg')";
     }
     if(index==2) {
-      Sliderr.style.backgroundImage = "URL('imageimg2.jpg')";
+      Sliderr.style.backgroundImage = "URL('./img/imageimg2.jpg')";
     }
     if(index==3) {
-      Sliderr.style.backgroundImage = "URL('imageimg3.jpg')";
+      Sliderr.style.backgroundImage = "URL('./img/imageimg3.jpg')";
     }
     if(index==4) {
-      Sliderr.style.backgroundImage = "URL('imageimg4.jpg')";
+      Sliderr.style.backgroundImage = "URL('./img/imageimg4.jpg')";
     } 
     if(index>=4){
       index=1;
@@ -64,3 +64,13 @@ const navbar = document.querySelector('.navbar');
 menuIcon.addEventListener('click', () =>{
     navbar.classList.toggle('change');
 })
+
+// prevent default
+document.querySelector('body').addEventListener('click', preventDflt);
+function preventDflt(e){
+  var tElment = e.target.getAttribute('href');
+  var tElmentP = e.target.parentElement.getAttribute('href');
+  if(tElment == '#' || tElmentP == '#'){
+    e.preventDefault();
+  }
+}
